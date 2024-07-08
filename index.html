@@ -111,20 +111,20 @@
             const query = document.getElementById('searchQuery').value.toLowerCase();
             resultsDiv.innerHTML = '<p>Buscando información para "' + query + '"...</p>';
 
-            // Simulación de resultados de búsqueda
+            // Simulación de resultados de búsqueda (ejemplo)
             setTimeout(() => {
                 const results = [
                     {
-                        title: "Información Ejemplo 1",
-                        content: "Esta es una información importante sobre un tema relevante. Aquí se proporciona el contenido detallado.",
-                        source: "https://www.ejemplo.com",
-                        citation: "Ejemplo, A. (2024). Título del artículo. Recuperado de https://www.ejemplo.com"
+                        title: "Información sobre CitaSpot",
+                        content: "CitaSpot es una plataforma dedicada a proporcionar información verificada y citada en formato APA.",
+                        source: "https://www.citaspot.com",
+                        citation: "CitaSpot. (2024). Información sobre CitaSpot. Recuperado de https://www.citaspot.com"
                     },
                     {
-                        title: "Información Ejemplo 2",
-                        content: "Otro tema relevante se describe aquí con detalles adicionales y puntos importantes.",
-                        source: "https://www.otroeemplo.com",
-                        citation: "Ejemplo, B. (2024). Título del artículo. Recuperado de https://www.otroeemplo.com"
+                        title: "Guía de Uso de CitaSpot",
+                        content: "Descubre cómo utilizar CitaSpot para encontrar información y citas en formato APA de manera efectiva.",
+                        source: "https://www.citaspot.com/guia",
+                        citation: "CitaSpot. (2024). Guía de Uso de CitaSpot. Recuperado de https://www.citaspot.com/guia"
                     }
                 ];
 
@@ -144,7 +144,7 @@
                 } else {
                     resultsDiv.innerHTML = '<p>No se encontraron resultados para "' + query + '".</p>';
                 }
-            }, 2000);
+            }, 1500); // Simular una búsqueda más rápida para propósitos demostrativos
         });
     </script>
 </body>
