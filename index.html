@@ -108,8 +108,7 @@
 
         searchForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            const query = document.getElementById('searchQuery').value.toLowerCase();
-            resultsDiv.innerHTML = '<p>Buscando información para "' + query + '"...</p>';
+            const query = document.getElementById('searchQuery').value.trim().toLowerCase();
 
             // Simulación de resultados de búsqueda (ejemplo)
             setTimeout(() => {
@@ -149,6 +148,3 @@
     </script>
 </body>
 </html>
-
-
-	
