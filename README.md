@@ -1,9 +1,9 @@
-# CitaMaster
+# CitaSpot
 
-**CitaMaster: Tu portal definitivo para encontrar información verificada con citas precisas y confiables.**
+**CitaSpot: Tu portal definitivo para encontrar información verificada con citas precisas y confiables.**
 
 ## Descripción
-CitaMaster es una plataforma que se dedica a proporcionar información verificada y citada en formato APA de manera precisa y confiable. Nuestra misión es ofrecer una fuente de datos fiable para quienes buscan información con respaldo académico y documental.
+CitaSpot es una plataforma que se dedica a proporcionar información verificada y citada en formato APA de manera precisa y confiable. Nuestra misión es ofrecer una fuente de datos fiable para quienes buscan información con respaldo académico y documental.
 
 ## Características
 - **Información Verificada**: Todas nuestras publicaciones incluyen citas de fuentes confiables.
@@ -12,7 +12,7 @@ CitaMaster es una plataforma que se dedica a proporcionar información verificad
 - **Diseño Atractivo**: Interfaz intuitiva y visualmente atractiva para una mejor experiencia de usuario.
 
 ## Cómo Usar
-1. **Visita la Página Web**: Accede a nuestra plataforma a través de [CitaMaster](https://tu-url-aqui).
+1. **Visita la Página Web**: Accede a nuestra plataforma a través de [CitaSpot](https://tu-url-aqui).
 2. **Explora la Información**: Navega por nuestras secciones para encontrar la información que necesitas.
 3. **Consulta las Fuentes**: Cada artículo incluye enlaces a las fuentes originales para una verificación completa.
 
@@ -25,8 +25,6 @@ CitaMaster es una plataforma que se dedica a proporcionar información verificad
 5. Abre un pull request.
 
 ## Contacto
-Si tienes preguntas o sugerencias, no dudes en contactarnos a través de [correo@citamaster.com](mailto:correo@citamaster.com).
 
----
+Gracias por usar CitaSpot. ¡Esperamos que encuentres la información que necesitas de manera rápida y confiable!
 
-Gracias por usar CitaMaster. ¡Esperamos que encuentres la información que necesitas de manera rápida y confiable!
