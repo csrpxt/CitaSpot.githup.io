@@ -1,82 +1,55 @@
-/* Reset CSS */
-* {
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Generales */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-}
-
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
-    text-align: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 main {
-    padding: 20px 0;
+    padding: 2rem;
 }
 
-.section {
-    padding: 40px 0;
-}
-
-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+#search-section {
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
-footer p {
-    font-size: 0.9rem;
+#search-input {
+    width: 60%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#search-button {
+    padding: 0.5rem;
+}
+
+#results-section {
+    margin-top: 2rem;
+}
+
+.result-item {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+
+.result-title {
+    font-weight: bold;
+}
+
+.result-snippet {
+    color: #333;
+}
+
+.result-citation {
+    font-style: italic;
+    color: #555;
 }
