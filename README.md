@@ -25,6 +25,8 @@ CitaSpot es una plataforma que se dedica a proporcionar información verificada 
 5. Abre un pull request.
 
 ## Contacto
+Si tienes preguntas o sugerencias, no dudes en contactarnos a través de [correo@citaspot.com](mailto:correo@citaspot.com).
+
+---
 
 Gracias por usar CitaSpot. ¡Esperamos que encuentres la información que necesitas de manera rápida y confiable!
-
