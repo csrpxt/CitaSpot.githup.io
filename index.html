@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CitaMaster</title>
+    <title>CitaSpot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,4 +32,119 @@
         }
         header ul {
             padding: 0;
-            list-style:
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        .info {
+            margin: 15px 0;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .info h2 {
+            margin-top: 0;
+        }
+        .info p.source {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .citation {
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        #searchForm {
+            margin: 20px 0;
+        }
+        #searchForm input, #searchForm button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #searchForm input {
+            width: 70%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>CitaSpot</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Buscar Información y Citar en Formato APA</h2>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Ingrese el término de búsqueda" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 CitaSpot. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const resultsDiv = document.getElementById('results');
+
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = document.getElementById('searchQuery').value.toLowerCase();
+            resultsDiv.innerHTML = '<p>Buscando información para "' + query + '"...</p>';
+
+            // Simulación de resultados de búsqueda
+            setTimeout(() => {
+                const results = [
+                    {
+                        title: "Información Ejemplo 1",
+                        content: "Esta es una información importante sobre un tema relevante. Aquí se proporciona el contenido detallado.",
+                        source: "https://www.ejemplo.com",
+                        citation: "Ejemplo, A. (2024). Título del artículo. Recuperado de https://www.ejemplo.com"
+                    },
+                    {
+                        title: "Información Ejemplo 2",
+                        content: "Otro tema relevante se describe aquí con detalles adicionales y puntos importantes.",
+                        source: "https://www.otroeemplo.com",
+                        citation: "Ejemplo, B. (2024). Título del artículo. Recuperado de https://www.otroeemplo.com"
+                    }
+                ];
+
+                const filteredResults = results.filter(result => result.title.toLowerCase().includes(query) || result.content.toLowerCase().includes(query));
+                if (filteredResults.length > 0) {
+                    resultsDiv.innerHTML = '';
+                    filteredResults.forEach(result => {
+                        resultsDiv.innerHTML += `
+                            <div class="info">
+                                <h2>${result.title}</h2>
+                                <p>${result.content}</p>
+                                <p class="source">Fuente: <a href="${result.source}" target="_blank">${result.source}</a></p>
+                                <p class="citation">Cita APA: ${result.citation}</p>
+                            </div>
+                        `;
+                    });
+                } else {
+                    resultsDiv.innerHTML = '<p>No se encontraron resultados para "' + query + '".</p>';
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
